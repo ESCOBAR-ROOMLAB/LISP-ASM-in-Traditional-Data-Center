@@ -23,8 +23,8 @@ annotations:
     text_unit: pt
     thickness: 1
     type: text
-    x1: -1106.552349197119
-    y1: -141.71960620867523
+    x1: -1188.7174097282762
+    y1: -147.58853910375788
     z_index: 1
   - border_color: '#000000'
     border_radius: 0
@@ -50,8 +50,8 @@ annotations:
     text_unit: pt
     thickness: 1
     type: text
-    x1: -1127.7668338201954
-    y1: 198.15850671227625
+    x1: -1198.1940285611872
+    y1: 197.18035122976246
     z_index: 1
   - border_color: '#000000'
     border_radius: 0
@@ -308,15 +308,15 @@ annotations:
     color: '#6F721C'
     rotation: 0
     text_bold: true
-    text_content: OSPF
+    text_content: OSPF / VRF-Lite
     text_font: monospace
     text_italic: false
     text_size: 15
     text_unit: pt
     thickness: 1
     type: text
-    x1: -259.2078599883806
-    y1: -41.09958223953823
+    x1: -304.27778240859743
+    y1: -49.053097960752964
     z_index: 4
   - border_color: '#000000'
     border_style: ''
@@ -345,15 +345,15 @@ annotations:
     color: '#6F721C'
     rotation: 0
     text_bold: true
-    text_content: OSPF
+    text_content: OSPF / VRF-Lite
     text_font: monospace
     text_italic: false
     text_size: 15
     text_unit: pt
     thickness: 1
     type: text
-    x1: -256.7497724235998
-    y1: 289.69918189335834
+    x1: -311.0987965185669
+    y1: 277.7689083115362
     z_index: 4
   - border_color: '#00000000'
     border_style: ''
@@ -367,8 +367,8 @@ annotations:
     text_unit: pt
     thickness: 1
     type: text
-    x1: -1170.7219455618085
-    y1: -106.44415768243344
+    x1: -1252.8870060929657
+    y1: -112.31309057751609
     z_index: 5
   - border_color: '#00000000'
     border_style: ''
@@ -382,8 +382,8 @@ annotations:
     text_unit: pt
     thickness: 1
     type: text
-    x1: -1207.5788587848576
-    y1: 236.74869888582782
+    x1: -1278.0060535258494
+    y1: 235.77054340331404
     z_index: 5
   - border_color: '#FF0000'
     border_radius: 0
@@ -465,7 +465,7 @@ annotations:
     y1: -59.5278852234888
     x2: 135.8417723657115
     y2: 112.44880641839912
-    z_index: 0
+    z_index: 1
   - border_color: '#00000000'
     border_style: ''
     color: '#BD0C0C'
@@ -717,8 +717,8 @@ annotations:
     text_unit: pt
     thickness: 1
     type: text
-    x1: -1107.0627400610324
-    y1: -184.90907596802958
+    x1: -1189.2278005921896
+    y1: -190.77800886311223
     z_index: 9
   - border_color: '#00000000'
     border_style: ''
@@ -732,8 +732,8 @@ annotations:
     text_unit: pt
     thickness: 1
     type: text
-    x1: -1124.7895951053765
-    y1: 157.5796444643343
+    x1: -1195.2167898463683
+    y1: 156.60148898182052
     z_index: 9
   - border_color: '#00000000'
     border_style: ''
@@ -2455,8 +2455,8 @@ nodes:
   - boot_disk_size: null
     configuration:
       - name: iosxe_config.txt
-        content: "Building configuration...\n\nCurrent configuration : 12515 bytes\n\
-          !\n! Last configuration change at 06:57:27 UTC Mon Sep 21 2026\n!\nversion\
+        content: "Building configuration...\n\nCurrent configuration : 12514 bytes\n\
+          !\n! Last configuration change at 22:26:52 UTC Mon Sep 21 2026\n!\nversion\
           \ 17.18\nservice timestamps debug datetime msec\nservice timestamps log\
           \ datetime msec\n!\nhostname DC02-xTR-02\n!\n!\nvrf definition 100\n description\
           \ ***COPORATE***\n !\n address-family ipv4\n exit-address-family\n!\nvrf\
@@ -2612,7 +2612,7 @@ nodes:
           \   itr map-resolver 10.10.10.100\n   itr\n   etr map-server 10.10.10.1\
           \ key 6 M]e\\NZOPC\\XDdV\\_ZFaUcGUBOA\\AAB\n   etr\n   exit-service-ipv4\n\
           \  !\n  exit-instance-id\n !\n exit-router-lisp\n!\nrouter ospf 100 vrf\
-          \ 100\n router-id 10.2.100.2\n redistribute lisp route-map ADV-HOST-ROUTES\n\
+          \ 100\n router-id 10.20.2.2\n redistribute lisp route-map ADV-HOST-ROUTES\n\
           \ passive-interface default\n no passive-interface Vlan100\n!\nrouter ospf\
           \ 200 vrf 200\n router-id 10.20.2.2\n redistribute lisp route-map ADV-HOST-ROUTES\n\
           \ passive-interface default\n no passive-interface Vlan200\n!\nrouter ospf\
@@ -4921,7 +4921,7 @@ nodes:
     hide_links: false
     id: n12
     image_definition: null
-    label: CORP_SRV-01
+    label: CORP_SRV-01 (.10.100)
     node_definition: alpine
     parameters: {}
     priority: null
@@ -5672,7 +5672,7 @@ nodes:
     hide_links: false
     id: n17
     image_definition: null
-    label: GUEST_SRV-01
+    label: GUEST_SRV-01 (.10.100)
     node_definition: alpine
     parameters: {}
     priority: null
@@ -5682,8 +5682,8 @@ nodes:
       enable_password: null
     ram: null
     tags: []
-    x: -848
-    y: -179
+    x: -824
+    y: -186
     interfaces:
       - id: i0
         label: eth0
@@ -5767,7 +5767,7 @@ nodes:
     hide_links: false
     id: n19
     image_definition: null
-    label: GUEST_SRV-02
+    label: GUEST_SRV-02 (.20.100)
     node_definition: alpine
     parameters: {}
     priority: null
@@ -5777,8 +5777,8 @@ nodes:
       enable_password: null
     ram: null
     tags: []
-    x: -857
-    y: 155
+    x: -799
+    y: 146
     interfaces:
       - id: i0
         label: eth0
@@ -5971,11 +5971,11 @@ links:
     label: GUEST_SRV-02-eth0<->DC02-AS-01-GigabitEthernet0/2
   - id: l24
     n1: n17
-    n2: n6
+    n2: n2
     i1: i0
     i2: i2
     conditioning: {}
-    label: GUEST_SRV-01-eth0<->DC02-AS-01-GigabitEthernet0/1
+    label: GUEST_SRV-01 (.10.100)-eth0<->DC01-AS-01-GigabitEthernet0/1
 lab:
   description: Traditional Data Center Architecthure without a L2 DCI, using LISP
     IP Mobility ASM to be able to perform Cold Migrations
